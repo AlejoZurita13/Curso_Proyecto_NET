@@ -129,18 +129,21 @@ Public Class Usuarios
 
     End Sub
 
-    Sub Buscar()
+    '' Intoduccion a buscar un usuario
+    Private Sub txtBusqueda_TextChanged(sender As Object, e As EventArgs) Handles txtBusqueda.TextChanged
+        Buscar()
 
     End Sub
-    Private Sub txtBusqueda_TextChanged(sender As Object, e As EventArgs) Handles txtBusqueda.TextChanged
+    '' Busqueda de usuario 
+    Sub Buscar()
         Dim dt As New DataTable
         Dim da As SqlDataAdapter
 
         Try
             abrir()
-            da = New SqlDataAdapter("buscar_usuario", conexion)
+            da = New SqlDataAdapter("buscar_usuarios", conexion)
             da.SelectCommand.CommandType = 4
-            da.SelectCommand.Parameters.AddWithValue("@letra",)
+            da.SelectCommand.Parameters.AddWithValue("@letra", txtBusqueda.Text)
 
             da.Fill(dt)
             DataListado.DataSource = dt
