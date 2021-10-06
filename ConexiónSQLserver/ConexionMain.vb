@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Module ConexionMain
-    Public conexion As New SqlConnection("Data Source=DESKTOP-I93TGEL\SQLEXPRESS;Initial Catalog=BaseDatosCursoProyecto;Integrated Scurity=True")
+    Public conexion As New SqlConnection("Data Source=DESKTOP-I93TGEL\SQLEXPRESS;Initial Catalog=BaseDatosCursoProyecto;Integrated Security=True")
 
     Sub abrir()
         If conexion.State = 0 Then
