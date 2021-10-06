@@ -32,7 +32,9 @@ Partial Class Usuarios
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DataListado = New System.Windows.Forms.DataGridView()
+        Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.lblidusuario = New System.Windows.Forms.Label()
         Me.txtBoxContraseña = New System.Windows.Forms.TextBox()
         Me.txtBoxUsuarios = New System.Windows.Forms.TextBox()
         Me.txtBoxNombres = New System.Windows.Forms.TextBox()
@@ -44,8 +46,6 @@ Partial Class Usuarios
         Me.GuardarCambiosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.lblidusuario = New System.Windows.Forms.Label()
-        Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
@@ -154,6 +154,13 @@ Partial Class Usuarios
         Me.DataListado.Size = New System.Drawing.Size(525, 314)
         Me.DataListado.TabIndex = 2
         '
+        'Eliminar
+        '
+        Me.Eliminar.HeaderText = ""
+        Me.Eliminar.Image = CType(resources.GetObject("Eliminar.Image"), System.Drawing.Image)
+        Me.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Eliminar.Name = "Eliminar"
+        '
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.lblidusuario)
@@ -168,6 +175,14 @@ Partial Class Usuarios
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(316, 294)
         Me.Panel4.TabIndex = 3
+        '
+        'lblidusuario
+        '
+        Me.lblidusuario.AutoSize = True
+        Me.lblidusuario.Location = New System.Drawing.Point(40, 160)
+        Me.lblidusuario.Name = "lblidusuario"
+        Me.lblidusuario.Size = New System.Drawing.Size(0, 13)
+        Me.lblidusuario.TabIndex = 7
         '
         'txtBoxContraseña
         '
@@ -269,21 +284,6 @@ Partial Class Usuarios
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        '
-        'lblidusuario
-        '
-        Me.lblidusuario.AutoSize = True
-        Me.lblidusuario.Location = New System.Drawing.Point(40, 160)
-        Me.lblidusuario.Name = "lblidusuario"
-        Me.lblidusuario.Size = New System.Drawing.Size(0, 13)
-        Me.lblidusuario.TabIndex = 7
-        '
-        'Eliminar
-        '
-        Me.Eliminar.HeaderText = ""
-        Me.Eliminar.Image = CType(resources.GetObject("Eliminar.Image"), System.Drawing.Image)
-        Me.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.Eliminar.Name = "Eliminar"
         '
         'Usuarios
         '
