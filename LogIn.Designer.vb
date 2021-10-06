@@ -64,7 +64,7 @@ Partial Class LogIn
         '
         Me.lblAcceder.AutoSize = True
         Me.lblAcceder.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAcceder.Location = New System.Drawing.Point(92, 169)
+        Me.lblAcceder.Location = New System.Drawing.Point(95, 169)
         Me.lblAcceder.Name = "lblAcceder"
         Me.lblAcceder.Size = New System.Drawing.Size(114, 31)
         Me.lblAcceder.TabIndex = 2
@@ -147,7 +147,7 @@ Partial Class LogIn
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(457, 693)
+        Me.ClientSize = New System.Drawing.Size(304, 490)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btniniciarSesion)
