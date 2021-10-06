@@ -39,19 +39,21 @@ Partial Class Usuarios
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.GuardarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GuardarCambiosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblidusuario = New System.Windows.Forms.Label()
+        Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         CType(Me.DataListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -143,15 +145,18 @@ Partial Class Usuarios
         Me.DataListado.AllowUserToResizeRows = False
         Me.DataListado.BackgroundColor = System.Drawing.Color.White
         Me.DataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eliminar})
         Me.DataListado.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataListado.Location = New System.Drawing.Point(0, 134)
         Me.DataListado.Name = "DataListado"
+        Me.DataListado.RowHeadersVisible = False
         Me.DataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataListado.Size = New System.Drawing.Size(525, 314)
         Me.DataListado.TabIndex = 2
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.lblidusuario)
         Me.Panel4.Controls.Add(Me.txtBoxContraseña)
         Me.Panel4.Controls.Add(Me.txtBoxUsuarios)
         Me.Panel4.Controls.Add(Me.txtBoxNombres)
@@ -218,26 +223,6 @@ Partial Class Usuarios
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nombres: "
         '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.PictureBox1)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel6.Location = New System.Drawing.Point(525, 134)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(89, 314)
-        Me.Panel6.TabIndex = 5
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-30, 47)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(156, 221)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
@@ -265,6 +250,41 @@ Partial Class Usuarios
         Me.GuardarCambiosToolStripMenuItem.Size = New System.Drawing.Size(129, 23)
         Me.GuardarCambiosToolStripMenuItem.Text = "Guardar cambios "
         '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.PictureBox1)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel6.Location = New System.Drawing.Point(525, 134)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(89, 314)
+        Me.Panel6.TabIndex = 5
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-30, 47)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(156, 221)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'lblidusuario
+        '
+        Me.lblidusuario.AutoSize = True
+        Me.lblidusuario.Location = New System.Drawing.Point(40, 160)
+        Me.lblidusuario.Name = "lblidusuario"
+        Me.lblidusuario.Size = New System.Drawing.Size(0, 13)
+        Me.lblidusuario.TabIndex = 7
+        '
+        'Eliminar
+        '
+        Me.Eliminar.HeaderText = ""
+        Me.Eliminar.Image = CType(resources.GetObject("Eliminar.Image"), System.Drawing.Image)
+        Me.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Eliminar.Name = "Eliminar"
+        '
         'Usuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -290,10 +310,10 @@ Partial Class Usuarios
         CType(Me.DataListado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -319,4 +339,6 @@ Partial Class Usuarios
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents GuardarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GuardarCambiosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lblidusuario As Label
+    Friend WithEvents Eliminar As DataGridViewImageColumn
 End Class
