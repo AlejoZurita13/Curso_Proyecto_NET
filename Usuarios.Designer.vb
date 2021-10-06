@@ -144,12 +144,18 @@ Partial Class Usuarios
         Me.DataListado.AllowUserToDeleteRows = False
         Me.DataListado.AllowUserToResizeRows = False
         Me.DataListado.BackgroundColor = System.Drawing.Color.White
+        Me.DataListado.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DataListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.DataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eliminar})
         Me.DataListado.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataListado.Location = New System.Drawing.Point(0, 134)
         Me.DataListado.Name = "DataListado"
+        Me.DataListado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.DataListado.RowHeadersVisible = False
+        Me.DataListado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.DarkGray
+        Me.DataListado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.DataListado.RowTemplate.ReadOnly = True
         Me.DataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataListado.Size = New System.Drawing.Size(525, 314)
         Me.DataListado.TabIndex = 2
