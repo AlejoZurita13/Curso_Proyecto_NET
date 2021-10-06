@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexiónSQLserver\ConexionMain.vb" />
+    <Compile Include="ConexiónSQLserver\Tamaño_autommatico_de_datatables.vb" />
     <Compile Include="LogIn.vb">
       <SubType>Form</SubType>
     </Compile>

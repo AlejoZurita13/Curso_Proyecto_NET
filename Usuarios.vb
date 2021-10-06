@@ -53,6 +53,7 @@ Public Class Usuarios
             da.Fill(dt)
             DataListado.DataSource = dt
             cerrar()
+            Multilinea(DataListado)
 
         Catch ex As Exception : MessageBox.Show(ex.Message)
 
